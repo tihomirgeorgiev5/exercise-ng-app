@@ -9,4 +9,8 @@ import { GreetingComponent } from '../components/greeting/greeting.component';
 })
 export class HomeComponent {
 homeMessage = signal('Hello, Angular!');
+
+keyUpHandler() {
+  console.log('Key up event detected');
+}
 }

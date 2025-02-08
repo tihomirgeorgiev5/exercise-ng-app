@@ -11,6 +11,6 @@ export class HomeComponent {
 homeMessage = signal('Hello, Angular!');
 
 keyUpHandler(event: KeyboardEvent) {
-  console.log('user pressed the ${event.key} key');
+  console.log(`user pressed the ${event.key} key`);
 }
 }

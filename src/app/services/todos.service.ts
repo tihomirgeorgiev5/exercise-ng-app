@@ -20,6 +20,10 @@ todoItems: Array<Todo> = [
     userId: 1,
     completed: false,
   },
-]
-  constructor() { }
+];
+getTodosFromApi() {
+  const url = `https://jsonplaceholder.typicode.com/todos`;
+  return this.http.get<Array<Todo>>(url);
+}
+  
 }

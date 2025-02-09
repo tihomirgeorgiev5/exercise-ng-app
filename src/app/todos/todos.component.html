@@ -1,2 +1,4 @@
-<p>{{ todoItems()[0].title}}</p>
+@for (todo of todoItems(); track $index) {
+    <p>{{ todo.title}}</p>
+}
   

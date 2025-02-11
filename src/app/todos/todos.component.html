@@ -3,10 +3,9 @@
 <ul class="todos">
     @for (todo of todoItems(); track todo.id) {
         <li class="todos__item">
-            <input type="checkbox" [value]="todo.completed" />
-            <label>{{ todo.title }}</label>
-        </li>
-        
+            <input id="todo-{{ todo.id }}" type="checkbox" [value]="todo.completed" />
+            <label for="todo-{{ todo.id }}">{{ todo.title }}</label>
+        </li> 
     }
 </ul> 
-  
+   

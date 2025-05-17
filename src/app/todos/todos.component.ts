@@ -8,7 +8,7 @@ import { TodoItemComponent } from '../components/todo-item/todo-item.component';
 
 @Component({
   selector: 'app-todos',
-  imports: [TodoItemComponent],
+  //imports: [TodoItemComponent],
   templateUrl: './todos.component.html',
   styleUrl: './todos.component.scss'
 })
@@ -31,7 +31,7 @@ ngOnInit(): void {
   
 }
 
-updateTodoItem(todoItem: Todo) {
+/*updateTodoItem(todoItem: Todo) {
   this.todoItems.update((todos) => {
     return todos.map(todo => {
       if (todo.id === todoItem.id ) {
@@ -44,5 +44,5 @@ updateTodoItem(todoItem: Todo) {
     })
   })
 
-} 
+} */
 }

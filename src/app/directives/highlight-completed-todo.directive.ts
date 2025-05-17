@@ -4,7 +4,9 @@ import { Directive, input, effect, inject, ElementRef } from '@angular/core';
   selector: '[appHighlightCompletedTodo]'
 })
 export class HighlightCompletedTodoDirective {
-  isCompleted = input(false);
+
+  constructor() { }
+  /*isCompleted = input(false);
 
   el = inject(ElementRef);
 
@@ -19,6 +21,6 @@ export class HighlightCompletedTodoDirective {
       this.el.nativeElement.style.backgroundColor = '#fff';
       this.el.nativeElement.style.color = '#000';
     }
-  });
+  });*/
 
 }

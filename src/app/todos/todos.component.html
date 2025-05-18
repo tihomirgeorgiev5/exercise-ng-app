@@ -10,7 +10,7 @@
 </form>
 
 <ul class="todos">
-    @for (todo of todoItems(); track todo.id) {
+    @for (todo of todoItems() | filterTodos : searchTerm(); track todo.id) {
        <app-todo-item (todoToggled)="updateTodoItem($event)"  [todo]="todo"/>
     }
 </ul> 

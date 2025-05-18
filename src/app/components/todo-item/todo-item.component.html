@@ -5,7 +5,7 @@
     <input
       id="todo-{{ todo().id }}"
       type="checkbox"
-      [value]="todo().completed"
+      [checked]="todo().completed"
       
       />
     <label for="todo-{{ todo().id }}">{{ todo().title }}</label>

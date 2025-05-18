@@ -4,12 +4,12 @@ import { HighlightCompletedTodoDirective } from '../../directives/highlight-comp
 
 @Component({
   selector: 'app-todo-item',
-  //imports: [HighlightCompletedTodoDirective],
+  imports: [],
   templateUrl: './todo-item.component.html',
   styleUrl: './todo-item.component.scss'
 })
 export class TodoItemComponent {
-  //todo = input.required<Todo>();
+  todo = input.required<Todo>();
   //todoToggled = output<Todo>();
 
   /*todoClicked() {

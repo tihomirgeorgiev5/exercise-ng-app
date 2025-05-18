@@ -10,10 +10,10 @@ import { HighlightCompletedTodoDirective } from '../../directives/highlight-comp
 })
 export class TodoItemComponent {
   todo = input.required<Todo>();
-  //todoToggled = output<Todo>();
+  todoToggled = output<Todo>();
 
-  /*todoClicked() {
+  todoClicked() {
     this.todoToggled.emit(this.todo());
-  }*/
+  }
 
 }

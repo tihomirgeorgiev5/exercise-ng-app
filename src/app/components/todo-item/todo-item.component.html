@@ -6,6 +6,7 @@
       id="todo-{{ todo().id }}"
       type="checkbox"
       [checked]="todo().completed"
+      (change)="this.todoClicked()"
       
       />
     <label for="todo-{{ todo().id }}">{{ todo().title }}</label>
